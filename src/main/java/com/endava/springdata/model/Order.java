@@ -79,6 +79,10 @@ public class Order {
         this.items = items;
     }
 
+    public void addItem(Item item) {
+        this.items.add(item);
+    }
+
     @Override
     public String toString() {
         return String.format("id: %d\tamount: %d\tcustomer: %s", id, amountEuros, customer.getFullName());
